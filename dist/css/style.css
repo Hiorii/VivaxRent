@@ -1,0 +1,868 @@
+/* Colors */
+/* Font sizes */
+/* Fonts */
+/* Animations */
+/* Global */
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  background-image: url("../images/background_main1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  font-family: "Caveat", cursive;
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #254636;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #b08f26;
+}
+
+/* sections */
+.navbar {
+  position: fixed;
+  background-color: transparent;
+  z-index: 9999;
+}
+
+.navbar .logo {
+  height: 7rem;
+  width: 18rem;
+  background-image: url(../images/logo-transparent.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  margin-top: -1.3rem;
+  margin-left: -2rem;
+}
+
+.navbar .logo a {
+  content: "";
+  height: 7rem;
+  width: 18rem;
+}
+
+.navbar .navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+}
+
+.navbar .nav-link {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -ms-flex-pack: center;
+      justify-content: center;
+  position: relative;
+  height: 3rem;
+  text-decoration: none;
+}
+
+.navbar .nav-link:hover {
+  background: #34ace0;
+  color: #ecf0f1;
+}
+
+.navbar .nav-link:hover .link-text {
+  text-shadow: none;
+}
+
+.navbar .nav-link i {
+  width: 1.5rem;
+  margin-right: 1rem;
+  text-shadow: none;
+}
+
+.navbar .link-text {
+  margin-left: 1rem;
+  font-size: 1.4rem;
+  text-shadow: 1px 2px white;
+}
+
+.navbar .nav-logo {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 0.3ch;
+}
+
+.navbar .nav-logo i {
+  transition: 0.5s ease;
+}
+
+.navbar .nav-logo:hover i {
+  transform: rotate(-360deg);
+}
+
+.scroll {
+  width: 100%;
+  position: fixed;
+  background-color: transparent;
+  z-index: 9999;
+  float: right;
+  background: #ecf0f1;
+  top: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.scroll .logo {
+  height: 7rem;
+  width: 18rem;
+  background-image: url(../images/logo-transparent.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  margin-top: -2.5rem;
+  margin-left: -2rem;
+}
+
+.scroll .navbar-nav {
+  list-style: none;
+  padding: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  background: #ecf0f1;
+  margin-right: 1.5rem;
+  display: flex;
+  text-align: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.scroll .nav-link {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -ms-flex-pack: center;
+      justify-content: center;
+  float: left;
+  display: block;
+  position: relative;
+  height: 100%;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.scroll .nav-link:hover {
+  background: #34ace0;
+  color: #ecf0f1;
+}
+
+.scroll .nav-link:hover .link-text {
+  text-shadow: none;
+}
+
+.scroll .nav-link i {
+  width: 1rem;
+  margin-right: .7rem;
+  text-shadow: none;
+}
+
+.scroll .link-text {
+  margin-left: 1rem;
+  font-size: 1.4rem;
+  text-shadow: 1px 2px white;
+}
+
+.scroll .nav-logo {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 0.3ch;
+}
+
+.scroll .nav-logo i {
+  transition: 0.5s ease;
+}
+
+.scroll .nav-logo:hover i {
+  transform: rotate(-360deg);
+}
+
+.header {
+  width: 100%;
+  height: 50vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.1)), url("../images/background1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: -.9rem;
+  z-index: -1;
+}
+
+.header .header-title {
+  width: 24rem;
+  position: absolute;
+  top: 10%;
+  right: 5%;
+}
+
+.header .header-title h1 {
+  color: white;
+  text-shadow: 2px 2px black;
+  font-size: 2.5rem;
+}
+
+.header .header-title p {
+  color: white;
+  text-shadow: 2px 2px black;
+  font-size: 1.5rem;
+}
+
+.offer .offer-title {
+  text-align: center;
+}
+
+.offer .offer-title h1 {
+  text-transform: uppercase;
+  color: #2c2c54;
+  font-size: 2.3rem;
+  font-family: "Ranchers", cursive;
+}
+
+.offer .offer-title h1 span {
+  margin-left: .5rem;
+}
+
+.offer .offer-title p {
+  line-height: .3rem;
+  color: #2c2c54;
+  font-size: 1.6rem;
+}
+
+.offer .offer-title .tittle-second-word {
+  text-transform: uppercase;
+  color: #ecf0f1;
+  font-size: 2.4rem;
+  font-family: "Ranchers", cursive;
+}
+
+.offer .offer-title h1 {
+  text-transform: lowercase;
+}
+
+.offer .offer-title p:nth-child(4) {
+  color: #ecf0f1;
+  font-weight: bold;
+}
+
+div.cards {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+div.card {
+  background: #ffffff;
+  display: inline-block;
+  margin: 1rem;
+  max-width: 25rem;
+  position: relative;
+  text-align: left;
+  transition: all 0.3s 0s ease-in;
+  z-index: 1;
+}
+
+.card-image {
+  width: 74rem;
+  height: 12rem;
+}
+
+div.card img {
+  max-width: 22rem;
+}
+
+div.card div.card-title {
+  background: #ffffff;
+  padding: 6px 15px 10px;
+  position: relative;
+  z-index: 0;
+}
+
+div.card div.card-title a.toggle-info {
+  border-radius: 32px;
+  height: 32px;
+  padding: 0;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  width: 32px;
+}
+
+div.card div.card-title a.toggle-info span {
+  background: #ffffff;
+  display: block;
+  height: 2px;
+  position: absolute;
+  top: 16px;
+  transition: all 0.15s 0s ease-out;
+  width: 12px;
+}
+
+div.card div.card-title a.toggle-info span.left {
+  right: 14px;
+  transform: rotate(45deg);
+}
+
+div.card div.card-title a.toggle-info span.right {
+  left: 14px;
+  transform: rotate(-45deg);
+}
+
+div.card div.card-title h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  margin: 0;
+  padding: 0;
+}
+
+div.card div.card-title h2 small {
+  display: block;
+  font-size: 1.7rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+div.card div.card-description {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+div.card div.card-description .property {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+div.card div.card-description span {
+  width: 35%;
+  font-size: 1.3rem;
+  color: #2c2c54;
+}
+
+div.card div.card-description span:nth-child(2) {
+  font-weight: bold;
+}
+
+div.card div.card-actions {
+  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.075);
+  padding: 10px 15px 20px;
+  text-align: center;
+}
+
+div.card div.card-flap {
+  background: #d9d9d9;
+  position: absolute;
+  width: 100%;
+  transform-origin: top;
+  transform: rotateX(-90deg);
+}
+
+div.card div.flap1 {
+  transition: all 0.3s 0.3s ease-out;
+  z-index: -1;
+}
+
+div.card div.flap2 {
+  transition: all 0.3s 0s ease-out;
+  z-index: -2;
+}
+
+div.cards.showing div.card {
+  cursor: pointer;
+  opacity: 0.6;
+  transform: scale(0.88);
+}
+
+.no-touch div.cards.showing div.card:hover {
+  opacity: 0.94;
+  transform: scale(0.92);
+}
+
+div.card.show {
+  opacity: 1 !important;
+  transform: scale(1) !important;
+}
+
+div.card.show div.card-title a.toggle-info {
+  background-image: url(../images/background_main1.jpg) !important;
+}
+
+div.card.show div.card-title a.toggle-info span {
+  top: 15px;
+}
+
+div.card.show div.card-title a.toggle-info span.left {
+  right: 10px;
+}
+
+div.card.show div.card-title a.toggle-info span.right {
+  left: 10px;
+}
+
+div.card.show div.card-flap {
+  background: #ffffff;
+  transform: rotateX(0deg);
+}
+
+div.card.show div.flap1 {
+  transition: all 0.3s 0s ease-out;
+}
+
+div.card.show div.flap2 {
+  transition: all 0.3s 0.2s ease-out;
+}
+
+.about .about-title {
+  text-align: center;
+}
+
+.about .about-title h1 {
+  text-transform: uppercase;
+  color: #2c2c54;
+  font-size: 2.3rem;
+  font-family: "Ranchers", cursive;
+}
+
+.about .about-title h1 span {
+  margin-left: .5rem;
+}
+
+.about .about-title p {
+  line-height: .3rem;
+  color: #2c2c54;
+  font-size: 1.6rem;
+}
+
+.about .about-title .tittle-second-word {
+  text-transform: uppercase;
+  color: #ecf0f1;
+  font-size: 2.4rem;
+  font-family: "Ranchers", cursive;
+}
+
+.about .about-title h1 {
+  text-transform: lowercase;
+}
+
+.about .about-title p:nth-child(4) {
+  color: #ecf0f1;
+  font-weight: bold;
+}
+
+.about-box {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.about-box .about-box-inner {
+  width: 70%;
+  height: 15rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.about-box .about-box-inner .about-img {
+  width: 50%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.about-box .about-box-inner .about-img-1 {
+  background-image: url("../images/gallery2.jpg");
+}
+
+.about-box .about-box-inner .about-img-2 {
+  background-image: url("../images/gallery4.png");
+}
+
+.about-box .about-box-inner .about-img-3 {
+  background-image: url("../images/gallery5.JPG");
+}
+
+.about-box .about-box-inner .about-img-4 {
+  background-image: url("../images/gallery6.JPG");
+}
+
+.about-box .about-box-inner .about-description {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 50%;
+  height: 100%;
+  padding: 0 1rem;
+  color: #2c2c54;
+}
+
+.about-box .about-box-inner .about-description p,
+.about-box .about-box-inner .about-description ul {
+  font-size: 1.1rem;
+}
+
+.about-box .about-inner-2 {
+  -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+}
+
+.price .price-title {
+  text-align: center;
+}
+
+.price .price-title h1 {
+  text-transform: uppercase;
+  color: #2c2c54;
+  font-size: 2.3rem;
+  font-family: "Ranchers", cursive;
+}
+
+.price .price-title h1 span {
+  margin-left: .5rem;
+}
+
+.price .price-title p {
+  line-height: .3rem;
+  color: #2c2c54;
+  font-size: 1.6rem;
+}
+
+.price .price-title .tittle-second-word {
+  text-transform: uppercase;
+  color: #ecf0f1;
+  font-size: 2.4rem;
+  font-family: "Ranchers", cursive;
+}
+
+.price .price-title h1 {
+  text-transform: lowercase;
+}
+
+.price .price-title p:nth-child(4) {
+  color: #ecf0f1;
+  font-weight: bold;
+}
+
+.price-descripction {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.price-descripction .price-descripction-inner {
+  width: 70%;
+  padding: 0 8rem;
+  margin-left: 2rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.price-descripction .descripction-inner2 {
+  background: #ecf0f1;
+}
+
+.price-descripction .price-name span {
+  font-weight: bold;
+}
+
+.price-descripction .price-value {
+  width: 50%;
+  margin-left: 5rem;
+  text-align: right;
+}
+
+.price-conditions p:first-child {
+  text-align: center;
+  font-size: 2rem;
+  color: #ecf0f1;
+}
+
+.price-conditions p:first-child span {
+  font-size: 2.5rem;
+  color: #2c2c54;
+}
+
+.price-conditions p:nth-child(2) {
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 420px) {
+  .price-conditions span {
+    font-size: 2rem;
+  }
+  p:nth-child(2) {
+    font-size: .5rem;
+  }
+}
+
+.contact .contact-title {
+  text-align: center;
+}
+
+.contact .contact-title h1 {
+  text-transform: uppercase;
+  color: #2c2c54;
+  font-size: 2.3rem;
+  font-family: "Ranchers", cursive;
+}
+
+.contact .contact-title h1 span {
+  margin-left: .5rem;
+}
+
+.contact .contact-title p {
+  line-height: .3rem;
+  color: #2c2c54;
+  font-size: 1.6rem;
+}
+
+.contact .contact-title .tittle-second-word {
+  text-transform: uppercase;
+  color: #ecf0f1;
+  font-size: 2.4rem;
+  font-family: "Ranchers", cursive;
+}
+
+.contact .contact-title h1 {
+  text-transform: lowercase;
+}
+
+.contact .contact-title p:nth-child(4) {
+  color: #ecf0f1;
+  font-weight: bold;
+}
+
+.contact .contact-inner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact .contact-inner .contact-data {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 100%;
+}
+
+.contact .contact-inner .contact-data-inner {
+  text-align: center;
+  width: 50%;
+  background-color: #ecf0f1;
+  box-shadow: 2px 2px black;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact .contact-inner .contact-data-inner h4 {
+  width: 100%;
+  margin: auto;
+  padding: auto;
+}
+
+.contact .contact-inner .contact-data-inner h4:first-child {
+  font-size: 1.5rem;
+}
+
+.contact .contact-inner .contact-data-inner .contact-detail {
+  margin: 0 20%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  width: 100%;
+}
+
+.contact .errorMes {
+  display: none;
+  position: fixed;
+  top: 10%;
+  left: 35%;
+  width: 30%;
+  height: 10%;
+  z-index: 99;
+}
+
+.contact .errorMes p {
+  font-size: 1.1rem;
+  color: #ecf0f1;
+  text-align: center;
+  padding: 0;
+  margin: auto;
+}
+
+.contact form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact form .form-inner {
+  width: 100%;
+  padding: 1rem 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.contact form .form-inner input, .contact form .form-inner textarea {
+  width: 50%;
+  background-color: #ecf0f1;
+  border: none;
+  box-shadow: 2px 2px black;
+}
+
+.contact form .form-inner input:focus {
+  background-color: #34ace0;
+}
+
+.contact form .form-inner textarea {
+  overflow: hidden;
+  resize: none;
+  rows: 10;
+}
+
+.contact form .form-inner textarea:focus {
+  background-color: #34ace0;
+}
+
+.footer {
+  margin-top: 4rem;
+  background-color: #ecf0f1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.footer a {
+  font-size: 9rem;
+  width: 5rem;
+  height: 5rem;
+}
+
+.footer a .fab {
+  background: #34ace0;
+  border-radius: 50%;
+  width: 5rem;
+}
+
+.waves {
+  height: 12rem;
+  width: 100%;
+  background-image: url("../images/waves.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+/* components */
+.btn {
+  background-image: url(../images/background_main1.jpg);
+  border-radius: 4px;
+  color: white;
+  display: inline-block;
+  padding: 7px 30px 8px;
+  position: relative;
+  text-decoration: none;
+  transition: 0.5s ease;
+  font-family: "Open Sans", Helvetica, Arial;
+}
+
+.btn:hover {
+  background: #34ace0;
+  transform: translateY(-2px);
+  transition: all 0.25s 0s ease-out;
+}
+
+.btn:active,
+.btn:active {
+  background-image: url(../images/background_main1.jpg);
+  box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.25);
+  transform: translate3d(0, 1px, 0);
+  transition: all 0.025s 0s ease-out;
+}
+/*# sourceMappingURL=style.css.map */
