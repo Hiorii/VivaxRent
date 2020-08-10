@@ -1,0 +1,32 @@
+@mixin flex($flex-direction, $align-items, $justify-content) {
+  display: flex;
+  flex-direction: $flex-direction;
+  align-items: $align-items;
+  justify-content: $justify-content;
+}
+
+@mixin textStyle {  
+  h1 {    
+    text-transform: uppercase;
+    color: $header-color;
+    font-size: 2.3rem;
+    font-family: $header-font;
+    
+    span {
+      margin-left: .5rem;
+    }
+  }
+
+  p {
+    line-height: .3rem;
+    color: $paragraph-color;
+    font-size: 1.6rem;      
+  }
+
+  .tittle-second-word {
+    text-transform: uppercase;
+    color: $paragraph-second-color;
+    font-size: 2.4rem;
+    font-family: $header-font;
+  }
+}

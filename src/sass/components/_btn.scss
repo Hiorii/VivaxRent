@@ -1,0 +1,25 @@
+.btn {
+  background-image: url(../images/background_main1.jpg);
+  border-radius: 4px;
+  color: white;
+  display: inline-block;
+  padding: 7px 30px 8px;
+  position: relative;
+  text-decoration: none;
+  transition: $transition;
+  font-family: $brand-font;
+}
+
+.btn:hover {
+  background: $hoover-background;
+  transform: translateY(-2px);
+  transition: all 0.25s 0s ease-out;
+}
+
+.btn:active,
+.btn:active {
+  background-image: url(../images/background_main1.jpg);
+  box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.25);
+  transform: translate3d(0, 1px, 0);
+  transition: all 0.025s 0s ease-out;
+}

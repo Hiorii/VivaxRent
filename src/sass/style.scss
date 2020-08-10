@@ -1,0 +1,16 @@
+@import 'variables';
+@import 'mixins';
+@import 'layout';
+
+/* sections */
+@import 'sections/sidebar';
+@import 'sections/header';
+@import 'sections/offer';
+@import 'sections/about';
+@import 'sections/price';
+@import 'sections/contact';
+@import 'sections/footer';
+@import 'sections/waves';
+
+/* components */
+@import 'components/btn';

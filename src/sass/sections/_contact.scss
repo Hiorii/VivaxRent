@@ -1,0 +1,112 @@
+.contact {  
+  .contact-title {
+    @include textStyle;
+    
+    text-align: center;
+    
+    h1 {
+      text-transform: lowercase;
+    }
+    
+    p:nth-child(4) {
+      color: $paragraph-second-color;
+      font-weight: bold;
+    }
+  }
+  
+  .contact-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    .contact-data {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+    
+    .contact-data-inner {
+      text-align: center;
+      width: 50%;
+      background-color: $paragraph-second-color;
+      box-shadow: 2px 2px black;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      
+      h4 {
+        width: 100%;
+        margin: auto;
+        padding: auto;
+      }
+      
+      h4:first-child {
+        font-size: 1.5rem;
+      }
+      
+      .contact-detail {
+        margin: 0 20%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+      }
+    }
+  }
+  
+  .errorMes {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 35%;
+    width: 30%;
+    height: 10%;
+    //background: rgba(252, 92, 101, 0.92);
+    z-index: 99;
+    
+    p {
+      font-size: 1.1rem;
+      color: #ecf0f1;
+      text-align: center;
+      padding: 0;
+      margin: auto;
+    }
+  }
+  
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    .form-inner {
+      width: 100%;
+      padding: 1rem 0;
+      display: flex;
+      justify-content: center;
+      
+      input, textarea {
+        width: 50%;
+        background-color: $paragraph-second-color;
+        border: none;
+        box-shadow: 2px 2px black;
+      }
+      
+      input:focus {
+        background-color: #34ace0;        
+      }
+      
+      textarea {
+        overflow: hidden;
+        resize: none;
+        rows: 10;
+      }
+      
+      textarea:focus {
+        background-color: #34ace0;        
+      }
+    }
+  }
+}

@@ -1,0 +1,157 @@
+.navbar {
+  position: fixed;
+  background-color: transparent;
+  z-index: 9999;
+    
+  .logo {
+    height: 7rem;
+    width: 18rem;
+    background-image: url(../images/logo-transparent.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    margin-top: -1.3rem;
+    margin-left: -2rem;
+  }
+  
+  .logo a {
+    content: "";
+    height: 7rem;
+    width: 18rem;
+  }
+  
+  .navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin-top: 1.5rem;
+  }
+  
+  .nav-link {
+    @include flex(column, flex-start, center);
+    
+    position: relative;
+    height: 3rem;
+    text-decoration: none;
+    
+    &:hover {	
+      background: $hoover-background;
+      color: $paragraph-second-color;
+      
+      .link-text {
+        text-shadow: none;
+      }
+    }		
+    
+    i {
+      width: 1.5rem;
+      margin-right: 1rem;
+      text-shadow: none;
+    }    
+  }	
+  
+  .link-text {
+    margin-left: 1rem;
+    font-size: 1.4rem;
+    text-shadow: 1px 2px white;
+  }
+  
+  .nav-logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 0.3ch;
+    
+    i {
+      transition: $transition;
+    }  
+  }
+  
+  .nav-logo:hover i {
+    transform: rotate(-360deg);
+  }  
+}
+
+.scroll {
+  width: 100%;
+  position: fixed;
+  background-color: transparent;
+  z-index: 9999;
+  float: right;
+  background: $paragraph-second-color;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    
+  .logo {    
+    height: 7rem;
+    width: 18rem;
+    background-image: url(../images/logo-transparent.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    margin-top: -2.5rem;
+    margin-left: -2rem;
+  }
+  
+  .navbar-nav {     
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    background: $paragraph-second-color;
+    margin-right: 1.5rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .nav-link {
+    @include flex(column, flex-start, center);
+
+    float: left;
+    display: block;
+    position: relative;
+    height: 100%;
+    text-decoration: none;
+    margin-right: 1rem;
+    
+    &:hover {	
+      background: $hoover-background;
+      color: $paragraph-second-color;
+      
+      .link-text {
+        text-shadow: none;
+      }
+    }		
+    
+    i {
+      width: 1rem;
+      margin-right: .7rem;
+      text-shadow: none;
+    }    
+  }	
+  
+  .link-text {
+    margin-left: 1rem;
+    font-size: 1.4rem;
+    text-shadow: 1px 2px white;
+  }
+  
+  .nav-logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 0.3ch;
+    
+    i {
+      transition: $transition;
+    }  
+  }
+  
+  .nav-logo:hover i {
+    transform: rotate(-360deg);
+  }  
+}

@@ -1,0 +1,21 @@
+.footer {
+  margin-top: 4rem;
+  background-color: $paragraph-second-color;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+  a {
+    font-size: 9rem;
+    width: 5rem;
+    height: 5rem;
+    
+    .fab {
+      background: $hoover-background;
+
+      border-radius: 50%;
+      width: 5rem;
+    } 
+  }
+  
+}
