@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Vivax Rent</title>
+  <meta name="Vivax Rent" content="Vivax Rent Watercraft Rental ervice">
+  <meta name="Vivax Rent" content="SitePoint">
+  <link rel="icon" type="image/png" href="./images/logo-transparent.png"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+	<section class="header">		
+		<nav class="navbar">	
+			<a href="#"><div class="logo"></div></a>
+			<ul class="navbar-nav">
+			  <li class="nav item">
+				<a href="#" class="nav-link nav-logo">
+				  <span class="link-text"><i class="fas fa-water"></i>Home</span>
+				</a>
+			  </li>
+			  <li class="nav item">
+				<a href="#offer" class="nav-link">
+				  <span class="link-text"><i class="fas fa-ship"></i>Oferta</span>
+				</a>
+			  </li>
+			  <li class="nav item">
+				<a href="#about" class="nav-link">
+				  <span class="link-text"><i class="fas fa-info"></i>O nas</span>
+				</a>
+			  </li>
+			  <li class="nav item">
+				<a href="#price" class="nav-link">
+				  <span class="link-text"><i class="fas fa-hand-holding-usd"></i>Cennik</span>
+				</a>
+			  </li>
+			  <li class="nav item">
+				<a href="#contact" class="nav-link">
+				  <span class="link-text"><i class="far fa-address-card"></i>Kontakt</span>
+				</a>
+			  </li>
+			</ul>
+		</nav>		
+		<div class="header-title">
+			<h1>
+				Wynajem skuterów wodnych
+			</h1>
+			<p>
+	  		Wypożyczalnia skuterów wodnych.
+			</p>
+      <p>
+        Serdeczenie zapraszamy do zapoznania się z naszą ofertą:
+      </p>
+      <a href="#offer" class="btn">Oferta</a>
+		</div>
+	</section>
+  
+<div class="waves"></div>
+  
+	<section class="offer" id="offer">
+    <div class="offer-title">
+      <h1>nasza <span class="tittle-second-word">oferta</span></h1>
+      <p>W naszej flocie mamy do dyspozycji dwa skutery wodne.</p>
+      <p>Sprawdź, który ci bardziej odpowiada</p>
+      <p>i zadźwoń albo wypełnij formularz kontaktowy.</p>
+    </div>
+    <div class="cards">      
+       <div class="card">
+           <img class="card-image" src="./images/offer1.jpg" alt="">
+           <div class="card-title">
+               <a href="" class="toggle-info btn">
+                   <span class="left"></span>
+                   <span class="right"></span>
+               </a>
+               <h2>
+                Sea-Doo GTR
+               <small>rocznik 2020</small>
+               </h2>
+           </div>             
+           <div class="card-flap flap1">
+               <div class="card-description">
+                 <div class="property">
+                   <span class="prop-name">Max ilość osób</span>
+                   <span class="prop-desc">3</span>
+                 </div>
+                 <div class="property">
+                   <span class="prop-name">Moc</span>
+                   <span class="prop-desc">230KM</span>  
+                 </div>
+                 <div class="property">
+                   <span class="prop-name">Odpalanie</span>
+                   <span class="prop-desc">Elektryczne</span>
+                 </div>
+                 <div class="property">
+                   <span class="prop-name">Przekładnia</span>
+                   <span class="prop-desc">Automatyczna</span>
+                 </div>
+                 <div class="property">
+                   <span class="prop-name">Minimalny wiek</span>
+                   <span class="prop-desc">18 lat</span>
+                 </div>        
+               </div>
+               <div class="card-flap flap2">
+                   <div class="card-actions">
+                       <a 
+                          href="#price" id="bookBtn" 
+                          class="btn btn-offer"   
+                          onclick="moveToBook()">
+                          Zarezerwuj
+                       </a>
+                       <a 
+                          href="#contact" id="contactBtn" 
+                          class="btn btn-offer"
+                          onclick="moveToPrice()">
+                          Cena
+                       </a>
+                   </div>
+               </div>
+           </div>          
+       </div>           
+       <div class="card">
+           <img class="card-image" src="./images/offer2.jpg" alt="">
+           <div class="card-title">
+               <a href="" class="toggle-info btn">
+                   <span class="left"></span>
+                   <span class="right"></span>
+               </a>
+               <h2>
+                Sea-Doo Spark 
+               <small>rocznik 2019</small>
+               </h2>
+           </div>             
+           <div class="card-flap flap1">
+               <div class="card-description">
+                <div class="property">
+                   <span class="prop-name">Max ilość osób</span>
+                   <span class="prop-desc">2</span>
+                 </div>
+                 <div class="property">
+                   <span class="prop-name">Moc</span>
+                   <span class="prop-desc">90KM</span>  
+                 </div>
+                 <div class="property">
+                   <span class="prop-name">Odpalanie</span>
+                   <span class="prop-desc">Elektryczne</span>
+                 </div>
+                 <div class="property">
+                   <span class="prop-name">Przekładnia</span>
+                   <span class="prop-desc">Automatyczna</span>
+                 </div>
+                 <div class="property">
+                   <span class="prop-name">Minimalny wiek</span>
+                   <span class="prop-desc">18 lat</span>
+                 </div>        
+               </div>
+               <div class="card-flap flap2">
+                   <div class="card-actions">
+                       <a 
+                          href="#price" id="bookBtn" 
+                          class="btn btn-offer"   
+                          onclick="moveToBook()">
+                          Zarezerwuj
+                       </a>
+                       <a 
+                          href="#contact" id="contactBtn" 
+                          class="btn btn-offer"
+                          onclick="moveToPrice()">
+                          Cena
+                       </a>
+                   </div>
+               </div>
+               </div>
+           </div>          
+       </div>     
+     </div>         
+	</section>
+  
+  <div class="waves"></div>
+  
+	<section class="about" id="about">
+	  <div class="about-title">
+      <h1>o <span class="tittle-second-word">nas</span></h1>
+      <p>W paru słowach...</p>
+    </div>
+    <div class="about-box">
+      <div class="about-box-inner about-inner-1">
+        <div class="about-img about-img-1">         
+        </div>
+        <div class="about-description">
+          <p>
+            Szukasz nietuzinkowej rozrywki na ciepłe wakacyjne dni? Chcesz zorganizować niezapomniany event dla rodziny, znajomych lub współpracowników z firmy? A może po prostu lubisz dobrą zabawę z nutą adrenaliny? W takim razie jesteś w odpowiednim miejscu  – firma Vivax Rent oferuje kompleksową usługę wypożyczenia skuterów wodnych na terenie całego kraju. 
+          </p>
+        </div>
+      </div>
+      <div class="about-box-inner about-inner-2">
+        <div class="about-img about-img-2">          
+        </div>
+        <div class="about-description">
+          <p>
+            Specjalnie dla Ciebie dowieziemy nasze skutery wraz z osprzętem na wskazany akwen wodny. Możesz je także odebrać osobiście w Gorzowie Wielkopolskim.  
+          </p>
+        </div>
+      </div>
+      <div class="about-box-inner about-inner-1">
+        <div class="about-img about-img-3">          
+        </div>
+        <div class="about-description">
+          <p>             
+             <ul>
+               Nasza flota obejmuje:
+               <li>Niezawodne skutery wodne marki Sea-Doo</li>
+               <li>Dedykowane przyczepy do transportu</li>
+            </ul>            
+          </p>
+        </div>
+      </div>
+      <div class="about-box-inner about-inner-2">
+        <div class="about-img about-img-4">          
+        </div>
+        <div class="about-description">
+          <p>           
+            <ul>
+               Dodatkowo oferujemy wynajem:
+               <li>Pianki neoprenowe męskie i damskie </li>
+               <li>Kapoki i kamizelki ratunkowe w różnych rozmiarach</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+	</section>
+
+  <div class="waves"></div>
+
+	<section class="price" id="price">
+		<div class="price-title">
+      <h1>nasz<span class="tittle-second-word">cennik</span></h1>      
+    </div>
+    <div class="price-descripction">
+      <div class="price-descripction-inner descripction-inner1">
+        <p class="price-name">Skuter <span>SeaDoo GTR</span></p>
+        <p class="price-value">
+          900zł/dzień z limitem 4mth <br>
+          każda kolejna godzina 250zł
+        </p>
+      </div>
+      <div class="price-descripction-inner descripction-inner2">
+        <p class="price-name">Skuter <span>SeaDoo Spark </span></p>
+        <p class="price-value">
+          500zł/dzień z limitem 4mth <br>
+          każda kolejna godzina 150zł
+        </p>
+      </div>
+      <div class="price-descripction-inner descripction-inner1">
+        <p class="price-name">
+          Wynajem <span>pontonu 1 osobowego JOBE</span><br>
+          doczepianego do skutera
+        </p>
+        <p class="price-value">
+          30zł/dzień
+        </p>
+      </div>
+      <div class="price-descripction-inner descripction-inner2">
+        <p class="price-name">
+          Dowóz skuterów do akwenów<br>
+          ustalany indywidualnie </p>
+        <p class="price-value">
+          stawka 2zł/km
+        </p>
+      </div>
+    </div>
+    <div class="price-conditions">
+      <p>Przy wynajmie długoterminowym  <span>atrakcyjne rabaty!!!</span></p>
+      <p>*Każdorazowo pobieramy kaucję zwrotną w wysokości 2500zł.<br>
+      **Skutery są w pełni zatankowane i gotowe do pływania. </p>
+    </div>
+	</section>
+
+  <div class="waves"></div>
+
+	<section class="contact" id="contact">
+		<div class="contact-title">
+      <h1>szybki<span class="tittle-second-word">kontakt</span></h1>      
+    </div>
+    <div class="contact-inner">
+      <div class="contact-data">
+        <div class="contact-data-inner">
+          <h4>Dane kontaktowe:</h4>
+          <h4>Vivax Sp. z o.o. Sp. K.</h4>
+          <div class="contact-detail">
+            <p>Adres:</p>
+            <p>ul. Kombatantów 34/1029,<br> 
+              66-400 Gorzów Wielkopolski</p>
+          </div>
+          <div class="contact-detail">
+            <p>Telefon:</p>
+            <p>Tel. +48519085204<br>
+               Tel. +48601730887</p>
+          </div>
+          <div class="contact-detail">
+            <p>Email:</p>
+            <p>vivax.rent@gmail.com</p>
+          </div>      
+        </div>
+      </div>
+      <div class="errorMes"><p></p></div>
+      <form class="gform pure-form pure-form-stacked" method="POST" data-email="janiak.bartosz92@gmail.com"
+  action="https://script.google.com/macros/s/AKfycbwgWUvsaTCRxg0hz3vhiLHihh0Alr-mkyfz_5YY/exec">
+        <div class="form-inner">
+          <input id="name" name="name" type="text" placeholder="Twoje imię">
+        </div>
+        <div class="form-inner">
+          <input id="email" name="email" type="text" placeholder="Twój adres e-mail">
+        </div>
+        <div class="form-inner">
+          <input id="phone" name="phone" type="text" placeholder="Twój telefon">
+        </div>
+        <div class="form-inner">
+          <textarea id="message" name="message" cols="30" rows="15" placeholder="Twoja wiadomość"></textarea>
+        </div>
+        <input id="subBtn" class="btn" type="submit">
+      </form>    
+    </div>    
+	</section>
+
+	<section class="footer">
+    <div>
+      <p>© Copy Rights 2020 All Rights Reserved by Vivax Rent.</p>
+    </div> 
+	</section>
+  <script data-cfasync="false" type="text/javascript"
+  src="form-submission-handler.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
