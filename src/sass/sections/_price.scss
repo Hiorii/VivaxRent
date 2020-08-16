@@ -23,7 +23,7 @@
 
   .price-descripction-inner {
     width: 70%;
-    padding: 0 8rem;
+    padding: 0 4rem;
     margin-left: 2rem;
     display: flex;
     justify-content: space-between;
@@ -35,6 +35,9 @@
   }  
   
   .price-name {
+    width: 100%;
+    font-size: 1.3rem;
+
     span {
       font-weight: bold;      
     }  
