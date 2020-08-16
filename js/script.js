@@ -8,6 +8,10 @@ function docReady(fn) {
   }
 }
 
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+};
+
 docReady(function() {
   let zindex = 10;
   const cards = document.querySelector('.cards').querySelectorAll('.card');
@@ -173,6 +177,7 @@ function changeClass() {
 })();
 
 /* Validation */
+const pageContent = document.querySelector('#page-content');
 const name = document.querySelector('#name');
 const email = document.querySelector('#email');
 const phone = document.querySelector('#phone');
@@ -212,7 +217,7 @@ for(let eventListener of eventListeners) {
   });
 
   message.addEventListener(eventListener, ()=>{
-    if(message.value.length > 0) {
+    if(message.value.length > 5) {
       message.style.background = '#26de81';
       subBtn.classList.add('messageOk');
     } else {
@@ -224,18 +229,22 @@ for(let eventListener of eventListeners) {
 subBtn.addEventListener('click', (e)=> {
   if(!subBtn.classList.contains('emailOk')) {
     e.preventDefault();
-    email.style.backgroundColor = 'red';
+    errorMes.style.backgroundColor = ('rgba(252, 92, 101, 0.94');
     errorMes.style.display = 'block';
     errorMes.childNodes[0].innerHTML = 'Wpisz prawidłowy adres e-mail';
   } else if(!subBtn.classList.contains('messageOk')) {
     e.preventDefault();
-    message.style.backgroundColor = '#fc5c65';
+    errorMes.style.backgroundColor = ('rgba(252, 92, 101, 0.94');
     errorMes.style.display = 'block';
     errorMes.childNodes[0].innerHTML = 'Wpisz treść wiadomości';
   } else {
-    message.style.backgroundColor = '#26de81';
+    errorMes.style.backgroundColor = '#26de81';
     errorMes.style.display = 'block';
-    errorMes.childNodes[0].innerHTML = 'Dziękujemy za wiadomość. Odpowiemy jak szybko się da!';
+    errorMes.childNodes[0].innerHTML = 'Dziękujemy za wiadomość. Odpowiemy najszybciej jak to możliwe!';
+    pageContent.style.opacity = '0.3';
+    setTimeout(()=>{
+      location.reload();
+    },3000);
   }
   setTimeout(()=>{
     errorMes.style.display = 'none';
