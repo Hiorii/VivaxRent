@@ -250,8 +250,3 @@ subBtn.addEventListener('click', (e)=> {
     errorMes.style.display = 'none';
   }, 3000);
 });
-
-
-
-
-
